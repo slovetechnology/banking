@@ -25,7 +25,7 @@ const theme = createTheme({
 });
 
 
-export default function layout({ children }) {
+export default function Layout({ children }) {
   const [open, setOpen] = React.useState(false);
   const [loading, setLoading] = useState(true)
 

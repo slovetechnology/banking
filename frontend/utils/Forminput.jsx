@@ -36,7 +36,7 @@ export default function Forminput({ label, formtype = "text", helperText, type="
             {formtype === 'checkbox' &&
                 <FormControlLabel control={<Checkbox />} label={label} />
             }
-            {formtype === 'text' && <TextField success className='w-full' id="outlined-basic" label={label} variant="outlined" />}
+            {formtype === 'text' && <TextField className='w-full' id="outlined-basic" label={label} variant="outlined" />}
             {formtype === 'textarea' && <TextField
                 id="outlined-multiline-flexible"
                 className='w-full'
