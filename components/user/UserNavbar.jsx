@@ -7,6 +7,7 @@ import {LuScanLine} from 'react-icons/lu'
 import notes from '@/public/images/notification.png'
 import Link from 'next/link'
 
+
 export default function UserNavbar({open}) {
     return (
         <div className="bg-white px-3 py-2 shadow-xl z-10 border-b">
