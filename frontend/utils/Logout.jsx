@@ -8,7 +8,9 @@ export default function Logout({onClose, open, LogoutButton}) {
   return (
     <ModalLayout onClose={onClose} open={open} title="">
         <div className="w-fit mx-auto mb-3">
-            <Imaged src={img} width={50} height={100} />
+            <div className="w-20 h-20 relative">
+            <Imaged src={img} fill />
+            </div>
         </div>
         <div className="text-center text-zinc-500">Hi <span className="font-bold text-black">Username</span>, Confirm your request to logout. </div>
         <div className="flex items-center justify-between mt-5 pt-5 border-t gap-10">

@@ -71,7 +71,9 @@ export default function UserDashboard() {
     <div className='w-11/12 mx-auto mt-5'>
       <div className="">
         <div className="flex items-center gap-5">
-          <Imaged src={profile} width={100} height={100} className="rounded-full object-cover" />
+          <div className="relative w-20 h-20">
+          <Imaged src={profile} fill className="rounded-full object-cover" />
+          </div>
           <div className="">
             <div className="text-3xl font-bold">Hi, Moses Alfred</div>
             <div className="flex items-center gap-2 text-zinc-500"> @jeamsauthor <IoCopy /> </div>

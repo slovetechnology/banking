@@ -18,9 +18,11 @@ export default function NewSaving({ open, onClose }) {
                 <div className="w-fit ml-auto"><Formbutton title="Continue" onClick={() => setScreen(1)} /></div>
             </div>}
             {screen === 1 && <div className="flex items-center justify-center flex-col">
-                <Imaged src={img} width={100} height={100} />
+                <div className="relative w-20 h-20">
+                <Imaged src={img} fill />
+                </div>
                 <div className="text-zinc-500 text-lg font-extralight mb-10 text-center mt-10"> <span className="text-red-600 font-semibold">-$300,000</span> will be deducted from your current available balance and transfered into your savings wallet</div>
-                <div className="w-full grid grid-cols-2 gap-10">
+                <div className="w-full flex items-center justify-between gap-10">
                     <Formbutton title="Back" onClick={() => setScreen(0)} className={'bg-slate-400'} />
                     <Formbutton title="Proceed" onClick={() => setScreen(2)} />
                 </div>

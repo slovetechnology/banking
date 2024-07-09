@@ -22,11 +22,15 @@ export default function UserNavbar({open}) {
                     <div className="flex items-center gap-6">
                         <button className='text-2xl relative'> <LuScanLine /> </button>
                         <Link href="/notifications" className='text-2xl relative'> 
-                        <Imaged src={notes} width={30} height={100} />
+                        <div className="w-10 h-10 relative">
+                        <Imaged src={notes} fill />
+                        </div>
                         </Link>
                         {/* <Link href="/notifications" className='text-2xl relative'> <BsBell /> <div className="w-3 h-3 bg-red-500 rounded-full border-2 border-white absolute -top-0 -right-1"></div> </Link> */}
                         <button className='flex items-center gap-2 bg-zinc-100 p-1 px-3 rounded-xl'>
-                            <Imaged src={profile} className="rounded-full object-cover" width={45} height={100} />
+                            <div className="relative w-10 h-10">
+                            <Imaged src={profile} className="rounded-full object-cover w-10 h-10" fill />
+                            </div>
                             <div className="hidden lg:block">
                                 <div className="text-left text-sm text-zinc-500 font-bold">Emeka williams</div>
                                 <div className="text-left text-sm text-green-600">Online</div>

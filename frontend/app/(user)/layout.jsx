@@ -83,7 +83,7 @@ export default function Layout({ children }) {
             <UserNavbar
               open={toggleDrawer}
             />
-            <div className="h-[91.1dvh] pb-10 overflow-y-auto">
+            <div className="h-[91.1dvh] pb-28 overflow-y-auto">
               {children}
               <div className="flex items-center justify-center mt-5 gap-2 text-zinc-500 text-sm"> <FaRegCopyright />2022, {Sitename} . All rights reserved </div>
               <div className="flex items-center justify-center gap-5 mt-3">
