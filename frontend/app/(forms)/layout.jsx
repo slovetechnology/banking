@@ -14,7 +14,7 @@ export default function layout({ children }) {
                         <div className="text-white text-5xl">{Sitename}</div>
                     </div>
                 </div>
-                <div className="lg:col-span-4 bg-slate-100">
+                <div className="lg:col-span-4 bg-white">
                     <div className="w-11/12 mx-auto mt-10 lg:mt-16">
                     <div className="rounded-xl max-w-2xl mx-auto">
                         {children}
