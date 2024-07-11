@@ -1,3 +1,4 @@
+
 import Imaged from '@/utils/Imaged'
 import React from 'react'
 import { RiMenu2Fill } from 'react-icons/ri'
@@ -8,7 +9,7 @@ import notes from '@/public/images/notification.png'
 import Link from 'next/link'
 
 
-export default function UserNavbar({ open }) {
+export default function AdminNavbar({ open }) {
     return (
         <div className="bg-white px-3 py-2 shadow-xl z-10 border-b">
             <div className="">
@@ -21,7 +22,7 @@ export default function UserNavbar({ open }) {
                     <div className="hidden lg:block"></div>
                     <div className="flex items-center gap-6">
                         <button className='text-2xl relative'> <LuScanLine /> </button>
-                        <Link href="/notifications" className='text-2xl relative'>
+                        <Link href="/admin/notifications" className='text-2xl relative'>
                             <div className="w-8 h-8 relative">
                                 <Imaged src={notes} fill />
                             </div>
@@ -42,3 +43,4 @@ export default function UserNavbar({ open }) {
         </div>
     )
 }
+

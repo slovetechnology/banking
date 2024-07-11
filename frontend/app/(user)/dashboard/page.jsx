@@ -76,7 +76,7 @@ export default function UserDashboard() {
           </div>
           <div className="">
             <div className="text-3xl font-bold">Hi, Moses Alfred</div>
-            <div className="flex items-center gap-2 text-zinc-500"> @jeamsauthor <IoCopy /> </div>
+            <div className="flex items-center gap-2 text-zinc-500"> 9600594940403 <IoCopy /> </div>
           </div>
         </div>
       </div>
