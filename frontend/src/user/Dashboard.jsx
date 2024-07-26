@@ -128,12 +128,12 @@ export default function Dashboard() {
                         </div>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
-                        {new Array(2).fill(0).map((item, index) => (
+                        {new Array(3).fill(0).map((item, index) => (
                             <div key={index} className="flex gap-2 justify-center items-center">
                                 <Progress
                                     type="dashboard"
                                     steps={8}
-                                    percent={index === 0 ? 70 : 30}
+                                    percent={82.5}
                                     strokeColor="#003087"
                                     trailColor="rgba(0, 0, 0, 0.06)"
                                     strokeWidth={20} />
